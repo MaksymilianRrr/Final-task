@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/maksymilian/IdeaProjects/Final task/src/test/java">
+        <classes>
+            <class name="tests.LoginPageTest">
+                <methods>
+                    <include name="testElementsDisplaying"/>
+                    <include name="testLoginWithWrongCredentials"/>
+                    <include name="testClosingOfMessage"/>
+                    <include name="testLoginWithStandardUser"/>
+                </methods>
+            </class>
+            <class name="tests.MainPageMenuTest">
+                <methods>
+                    <include name="testMenuOptionDisplaying"/>
+                    <include name="testMenuOptionAllItems"/>
+                    <include name="testMenuOptionAbout"/>
+                    <include name="testMenuOptionLogout"/>
+                    <include name="testMenuOptionResetAppState"/>
+                </methods>
+            </class>
+            <class name="tests.MainPageTest">
+                <methods>
+                    <include name="testElementsDisplaying"/>
+                    <include name="testButtonTwitter"/>
+                    <include name="testButtonFacebook"/>
+                    <include name="testButtonLinkedIn"/>
+                    <include name="testButtonInventoryAdd"/>
+                    <include name="testButtonInventoryRemove"/>
+                    <include name="testButtonInventoryAddAll"/>
+                    <include name="testButtonInventoryRemoveAll"/>
+                    <include name="testSorting"/>
+                </methods>
+            </class>
+            <class name="tests.PreviewPageTest">
+                <methods>
+                    <include name="testPreviewDataDisplaying"/>
+                    <include name="testButtonBack"/>
+                </methods>
+            </class>
+            <class name="tests.CartPageTest">
+                <methods>
+                    <include name="testElementsDisplaying"/>
+                    <include name="testButtonContinueShopping"/>
+                    <include name="testRemovingInventories"/>
+                    <include name="testInventoryData"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutOnePageTest">
+                <methods>
+                    <include name="testElementsDisplaying"/>
+                    <include name="testButtonCancel"/>
+                    <include name="testNotifications"/>
+                    <include name="testCloseMessage"/>
+                    <include name="testButtonContinue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
